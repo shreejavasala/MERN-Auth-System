@@ -9,6 +9,15 @@ A full-stack **MERN (MongoDB, Express, React, Node.js)** authentication system w
 [Frontend & Backend Live on Render](https://mern-auth-system-wfsk.onrender.com)
 
 ---
+## ⚠️ Live Demo Note  
+
+- This project is deployed on **Render (Free Tier)**.  
+- Please note that on the free plan, the server becomes inactive after periods of inactivity.  
+- As a result, the first request may take up to **1 minute** to spin up the server.  
+
+You can learn more about Render’s free tier limitations in their documentation: [Render Free Instance Details](https://render.com/docs/free)  
+
+---
 
 ## **Features**
 
