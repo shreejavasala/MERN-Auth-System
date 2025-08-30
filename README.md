@@ -1,6 +1,6 @@
-# MERN Auth System
+# MERN Auth System 🔒 
 
-A full-stack **MERN (MongoDB, Express, React, Node.js)** authentication system with email verification, password reset, and session management.
+A full-stack **MERN (MongoDB, Express, React, Node.js)** authentication system with email verification, password reset, and secure JWT login.
 
 ---
 
@@ -13,11 +13,11 @@ A full-stack **MERN (MongoDB, Express, React, Node.js)** authentication system w
 ## **Features**
 
 - **User Authentication**
-  - Sign Up with email and password
+  - Sign Up with name, email and password
   - Login and Logout
   - Check authentication status
 - **Email Services**
-  - Verify account via email after signup
+  - Verify account via email after signup using mailtrap
   - Welcome emails on successful verification
   - Password reset emails with secure links
   - Reset success confirmation email
@@ -40,8 +40,34 @@ A full-stack **MERN (MongoDB, Express, React, Node.js)** authentication system w
 - **Authentication & Security:** bcryptjs, JWT, cookie-parser  
 - **Email Service:** Mailtrap API for verification and password reset emails  
 - **Deployment:** Render for backend & frontend  
+---
+## **Mailtrap**
+
+**Mailtrap** is used to safely **test and debug all email workflows** in the MERN Auth System, including **email verification, welcome emails, password reset emails, and password reset success notifications**.
+
+Check out here: [https://mailtrap.io](https://mailtrap.io)
 
 ---
+
+## Project Structure
+
+```
+root/
+├─ backend/
+│ ├─ server.js
+│ ├─ routes/
+│ │ └─ auth.route.js
+│ ├─ controllers/
+│ │ └─ auth.controller.js
+│ └─ db/
+│ └─ connectDB.js
+├─ frontend/
+│ ├─ src/
+│ ├─ package.json
+│ └─ dist/ (after build)
+├─ package.json
+```
+
 ## **API Endpoints**
 
 | Method | Route                            | Description                    |
@@ -72,7 +98,6 @@ CLIENT_URL=http://localhost:5173
 ## **Run app locally**
 
 
-
 ```env
 npm run build
 ```
@@ -83,14 +108,19 @@ npm run build
 npm run start
 ```
 
-## **Start the app**
+## **Quick Notes**
 
 - Frontend API calls use relative path /api/auth in production and http://localhost:3000/api/auth in development.
 - Make sure to create an account on mailtrap, and if you have your own domain use that to sent email to anyone.  
-- If you are using the demo mailtrap domain, then you will able to send email to only mail connected to your account.  
+- If you are using the demo mailtrap domain, then you will be able to send emails to only mail connected to your account.  
 - Make sure Mailtrap credentials are valid to test email functionality.  
 - CORS is configured to allow http://localhost:5173 in development and your CLIENT_URL in production.  
 
+---
+
+✨ Thank you for checking out this project! ✨  
+If you like it, consider giving the repo a ⭐ and sharing your feedback.  
+Your support motivates me to build more amazing projects! 🚀
 
 
 
